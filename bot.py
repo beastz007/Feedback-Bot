@@ -131,7 +131,7 @@ async def start(bot, message):
     await message.reply_text(
         text="**Hi {}!**\n".format(message.chat.first_name)+C.START,
         reply_markup=InlineKeyboardMarkup([
-            [ InlineKeyboardButton(text="🛠SUPPORT🛠", url=f"{C.SUPPORT_GROUP}"), InlineKeyboardButton(text="📮UPDATES📮", url=f"{C.UPDATE_CHANNEL}")]
+            [ InlineKeyboardButton(text="SUPPORT", url=f"{C.SUPPORT_GROUP}"), InlineKeyboardButton(text="UPDATES", url=f"{C.UPDATE_CHANNEL}")]
         ])
     )
 
@@ -158,7 +158,7 @@ async def help(bot, message):
     await message.reply_text(
         text=C.HELP,
         reply_markup=InlineKeyboardMarkup([
-            [ InlineKeyboardButton(text="🛠SUPPORT🛠", url=f"{C.SUPPORT_GROUP}"), InlineKeyboardButton(text="📮UPDATES📮", url=f"{C.UPDATE_CHANNEL}")]
+            [ InlineKeyboardButton(text="SUPPORT", url=f"{C.SUPPORT_GROUP}"), InlineKeyboardButton(text="UPDATES", url=f"{C.UPDATE_CHANNEL}")]
         ])
     )
 
@@ -185,7 +185,7 @@ async def donate(bot, message):
         return
         
     await message.reply_text(
-        text=C.DONATE + "If You Liked This Bot You Can Also Donate Creator through BTC `3AKE4bNwb9TsgaofLQxHAGCR9w2ftwFs2R`",
+        text=C.DONATE + "If You Liked This Bot You Can Donate Us.",
         reply_markup=InlineKeyboardMarkup([
             [ InlineKeyboardButton(text="DONATE", url=f"{donate_link}")]
         ])
